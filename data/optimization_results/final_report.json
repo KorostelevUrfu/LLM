@@ -1,0 +1,12 @@
+{
+  "best_strategy": "overlap",
+  "best_params": {
+    "chunk_size": 200,
+    "overlap": 10,
+    "min_chunk_length": 20
+  },
+  "best_mrr": 0.95,
+  "best_hits1": 0.9333333333333333,
+  "total_experiments": 27,
+  "optimization_time_minutes": 121.00325616995494
+}

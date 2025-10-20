@@ -1,0 +1,386 @@
+[
+  {
+    "strategy": "sentences",
+    "params": {
+      "min_sentence_length": 5,
+      "min_chunk_length": 15
+    },
+    "MRR": 0.6833333333333333,
+    "Hits@1": 0.5333333333333333,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 16.557757370710487,
+    "total_chunks": 2069,
+    "chunk_efficiency": 0.009908168197196714
+  },
+  {
+    "strategy": "sentences",
+    "params": {
+      "min_sentence_length": 10,
+      "min_chunk_length": 30
+    },
+    "MRR": 0.7055555555555555,
+    "Hits@1": 0.5333333333333333,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 16.959661354581673,
+    "total_chunks": 2008,
+    "chunk_efficiency": 0.010541168658698538
+  },
+  {
+    "strategy": "sentences",
+    "params": {
+      "min_sentence_length": 15,
+      "min_chunk_length": 45
+    },
+    "MRR": 0.75,
+    "Hits@1": 0.6,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 17.809802876931272,
+    "total_chunks": 1877,
+    "chunk_efficiency": 0.011987213638785296
+  },
+  {
+    "strategy": "sentences",
+    "params": {
+      "min_sentence_length": 20,
+      "min_chunk_length": 60
+    },
+    "MRR": 0.7444444444444444,
+    "Hits@1": 0.6,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 19.798516687268233,
+    "total_chunks": 1618,
+    "chunk_efficiency": 0.013803049031726411
+  },
+  {
+    "strategy": "paragraphs",
+    "params": {
+      "min_paragraph_length": 20,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.75,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 18.19861922464153,
+    "total_chunks": 1883,
+    "chunk_efficiency": 0.011949017525225704
+  },
+  {
+    "strategy": "paragraphs",
+    "params": {
+      "min_paragraph_length": 30,
+      "min_chunk_length": 30
+    },
+    "MRR": 0.75,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 19.0393037619315,
+    "total_chunks": 1781,
+    "chunk_efficiency": 0.012633352049410443
+  },
+  {
+    "strategy": "paragraphs",
+    "params": {
+      "min_paragraph_length": 50,
+      "min_chunk_length": 50
+    },
+    "MRR": 0.7388888888888888,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 29.735159817351597,
+    "total_chunks": 1095,
+    "chunk_efficiency": 0.02024353120243531
+  },
+  {
+    "strategy": "paragraphs",
+    "params": {
+      "min_paragraph_length": 80,
+      "min_chunk_length": 80
+    },
+    "MRR": 0.8022222222222222,
+    "Hits@1": 0.7333333333333333,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 33.735644637053085,
+    "total_chunks": 923,
+    "chunk_efficiency": 0.026074395088479595
+  },
+  {
+    "strategy": "fixed",
+    "params": {
+      "chunk_size": 50,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.7944444444444444,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 48.90767045454545,
+    "total_chunks": 704,
+    "chunk_efficiency": 0.033854166666666664
+  },
+  {
+    "strategy": "fixed",
+    "params": {
+      "chunk_size": 100,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.9333333333333333,
+    "Hits@1": 0.8666666666666667,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 95.11325966850829,
+    "total_chunks": 362,
+    "chunk_efficiency": 0.07734806629834254
+  },
+  {
+    "strategy": "fixed",
+    "params": {
+      "chunk_size": 150,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.88,
+    "Hits@1": 0.8,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 141.11065573770492,
+    "total_chunks": 244,
+    "chunk_efficiency": 0.10819672131147541
+  },
+  {
+    "strategy": "fixed",
+    "params": {
+      "chunk_size": 200,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.88,
+    "Hits@1": 0.8,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 182.17460317460316,
+    "total_chunks": 189,
+    "chunk_efficiency": 0.13968253968253969
+  },
+  {
+    "strategy": "fixed",
+    "params": {
+      "chunk_size": 250,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.7888888888888889,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.8666666666666667,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 225.0392156862745,
+    "total_chunks": 153,
+    "chunk_efficiency": 0.15468409586056645
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 100,
+      "overlap": 10,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.9111111111111111,
+    "Hits@1": 0.8666666666666667,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 96.40506329113924,
+    "total_chunks": 395,
+    "chunk_efficiency": 0.06919831223628692
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 100,
+      "overlap": 20,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.9333333333333333,
+    "Hits@1": 0.8666666666666667,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 95.61659192825113,
+    "total_chunks": 446,
+    "chunk_efficiency": 0.06278026905829596
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 100,
+      "overlap": 30,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.888888888888889,
+    "Hits@1": 0.8,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 95.61220472440945,
+    "total_chunks": 508,
+    "chunk_efficiency": 0.05249343832020998
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 100,
+      "overlap": 40,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.8777777777777778,
+    "Hits@1": 0.8,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 96.29180887372014,
+    "total_chunks": 586,
+    "chunk_efficiency": 0.04493742889647326
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 150,
+      "overlap": 10,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.8222222222222222,
+    "Hits@1": 0.7333333333333333,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 140.2175572519084,
+    "total_chunks": 262,
+    "chunk_efficiency": 0.09414758269720103
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 150,
+      "overlap": 20,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.8355555555555555,
+    "Hits@1": 0.8,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 140.23487544483984,
+    "total_chunks": 281,
+    "chunk_efficiency": 0.08920521945432977
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 150,
+      "overlap": 30,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.9222222222222223,
+    "Hits@1": 0.8666666666666667,
+    "Hits@3": 1.0,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 141.63333333333333,
+    "total_chunks": 300,
+    "chunk_efficiency": 0.09222222222222223
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 150,
+      "overlap": 40,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.9166666666666666,
+    "Hits@1": 0.8666666666666667,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 141.21100917431193,
+    "total_chunks": 327,
+    "chunk_efficiency": 0.08409785932721713
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 200,
+      "overlap": 10,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.95,
+    "Hits@1": 0.9333333333333333,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 183.1776649746193,
+    "total_chunks": 197,
+    "chunk_efficiency": 0.1446700507614213
+  },
+  {
+    "strategy": "overlap",
+    "params": {
+      "chunk_size": 200,
+      "overlap": 20,
+      "min_chunk_length": 20
+    },
+    "MRR": 0.8722222222222222,
+    "Hits@1": 0.8,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 183.43478260869566,
+    "total_chunks": 207,
+    "chunk_efficiency": 0.12640901771336555
+  },
+  {
+    "strategy": "headings",
+    "params": {
+      "min_chunk_length": 30
+    },
+    "MRR": 0.8244444444444444,
+    "Hits@1": 0.7333333333333333,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 116.31632653061224,
+    "total_chunks": 294,
+    "chunk_efficiency": 0.08412698412698412
+  },
+  {
+    "strategy": "headings",
+    "params": {
+      "min_chunk_length": 50
+    },
+    "MRR": 0.7911111111111111,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 118.625,
+    "total_chunks": 288,
+    "chunk_efficiency": 0.08240740740740742
+  },
+  {
+    "strategy": "headings",
+    "params": {
+      "min_chunk_length": 80
+    },
+    "MRR": 0.7911111111111111,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 121.37366548042705,
+    "total_chunks": 281,
+    "chunk_efficiency": 0.08446026097271649
+  },
+  {
+    "strategy": "headings",
+    "params": {
+      "min_chunk_length": 100
+    },
+    "MRR": 0.7911111111111111,
+    "Hits@1": 0.6666666666666666,
+    "Hits@3": 0.9333333333333333,
+    "Hits@5": 1.0,
+    "avg_chunk_words": 121.37366548042705,
+    "total_chunks": 281,
+    "chunk_efficiency": 0.08446026097271649
+  }
+]

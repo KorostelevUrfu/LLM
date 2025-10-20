@@ -1,0 +1,148 @@
+🚀 AUTOMATIC CHUNK OPTIMIZATION SYSTEM
+============================================================
+Загрузка данных...
+Загрузка текстов документов...
+Загружено: 30 документов, 15 вопросов
+🚀 ЗАПУСК КОМПЛЕКСНОЙ ОПТИМИЗАЦИИ ЧАНКОВ
+============================================================
+
+🔧 Оптимизация стратегии: sentences
+==================================================
+Загрузка модели эмбеддингов...
+Some weights of RobertaModel were not initialized from the model checkpoint at ai-forever/ru-en-RoSBERTa and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Эксперимент 1/4: {'min_sentence_length': 5, 'min_chunk_length': 15}
+  ✅ MRR: 0.683, Chunks: 2069, Avg words: 16.6
+Эксперимент 2/4: {'min_sentence_length': 10, 'min_chunk_length': 30}
+  ✅ MRR: 0.706, Chunks: 2008, Avg words: 17.0
+Эксперимент 3/4: {'min_sentence_length': 15, 'min_chunk_length': 45}
+  ✅ MRR: 0.750, Chunks: 1877, Avg words: 17.8
+Эксперимент 4/4: {'min_sentence_length': 20, 'min_chunk_length': 60}
+  ✅ MRR: 0.744, Chunks: 1618, Avg words: 19.8
+🏆 Лучший результат для sentences: MRR = 0.750
+
+🔧 Оптимизация стратегии: paragraphs
+==================================================
+Эксперимент 1/4: {'min_paragraph_length': 20, 'min_chunk_length': 20}
+  ✅ MRR: 0.750, Chunks: 1883, Avg words: 18.2
+Эксперимент 2/4: {'min_paragraph_length': 30, 'min_chunk_length': 30}
+  ✅ MRR: 0.750, Chunks: 1781, Avg words: 19.0
+Эксперимент 3/4: {'min_paragraph_length': 50, 'min_chunk_length': 50}
+  ✅ MRR: 0.739, Chunks: 1095, Avg words: 29.7
+Эксперимент 4/4: {'min_paragraph_length': 80, 'min_chunk_length': 80}
+  ✅ MRR: 0.802, Chunks: 923, Avg words: 33.7
+🏆 Лучший результат для paragraphs: MRR = 0.802
+
+🔧 Оптимизация стратегии: fixed
+==================================================
+Эксперимент 1/5: {'chunk_size': 50, 'min_chunk_length': 20}
+  ✅ MRR: 0.794, Chunks: 704, Avg words: 48.9
+Эксперимент 2/5: {'chunk_size': 100, 'min_chunk_length': 20}
+  ✅ MRR: 0.933, Chunks: 362, Avg words: 95.1
+Эксперимент 3/5: {'chunk_size': 150, 'min_chunk_length': 20}
+  ✅ MRR: 0.880, Chunks: 244, Avg words: 141.1
+Эксперимент 4/5: {'chunk_size': 200, 'min_chunk_length': 20}
+  ✅ MRR: 0.880, Chunks: 189, Avg words: 182.2
+Эксперимент 5/5: {'chunk_size': 250, 'min_chunk_length': 20}
+  ✅ MRR: 0.789, Chunks: 153, Avg words: 225.0
+🏆 Лучший результат для fixed: MRR = 0.933
+
+🔧 Оптимизация стратегии: overlap
+==================================================
+Эксперимент 1/10: {'chunk_size': 100, 'overlap': 10, 'min_chunk_length': 20}
+  ✅ MRR: 0.911, Chunks: 395, Avg words: 96.4
+Эксперимент 2/10: {'chunk_size': 100, 'overlap': 20, 'min_chunk_length': 20}
+  ✅ MRR: 0.933, Chunks: 446, Avg words: 95.6
+Эксперимент 3/10: {'chunk_size': 100, 'overlap': 30, 'min_chunk_length': 20}
+  ✅ MRR: 0.889, Chunks: 508, Avg words: 95.6
+Эксперимент 4/10: {'chunk_size': 100, 'overlap': 40, 'min_chunk_length': 20}
+  ✅ MRR: 0.878, Chunks: 586, Avg words: 96.3
+Эксперимент 5/10: {'chunk_size': 150, 'overlap': 10, 'min_chunk_length': 20}
+  ✅ MRR: 0.822, Chunks: 262, Avg words: 140.2
+Эксперимент 6/10: {'chunk_size': 150, 'overlap': 20, 'min_chunk_length': 20}
+  ✅ MRR: 0.836, Chunks: 281, Avg words: 140.2
+Эксперимент 7/10: {'chunk_size': 150, 'overlap': 30, 'min_chunk_length': 20}
+  ✅ MRR: 0.922, Chunks: 300, Avg words: 141.6
+Эксперимент 8/10: {'chunk_size': 150, 'overlap': 40, 'min_chunk_length': 20}
+  ✅ MRR: 0.917, Chunks: 327, Avg words: 141.2
+Эксперимент 9/10: {'chunk_size': 200, 'overlap': 10, 'min_chunk_length': 20}
+  ✅ MRR: 0.950, Chunks: 197, Avg words: 183.2
+Эксперимент 10/10: {'chunk_size': 200, 'overlap': 20, 'min_chunk_length': 20}
+  ✅ MRR: 0.872, Chunks: 207, Avg words: 183.4
+🏆 Лучший результат для overlap: MRR = 0.950
+
+🔧 Оптимизация стратегии: headings
+==================================================
+Эксперимент 1/4: {'min_chunk_length': 30}
+  ✅ MRR: 0.824, Chunks: 294, Avg words: 116.3
+Эксперимент 2/4: {'min_chunk_length': 50}
+  ✅ MRR: 0.791, Chunks: 288, Avg words: 118.6
+Эксперимент 3/4: {'min_chunk_length': 80}
+  ✅ MRR: 0.791, Chunks: 281, Avg words: 121.4
+Эксперимент 4/4: {'min_chunk_length': 100}
+  ✅ MRR: 0.791, Chunks: 281, Avg words: 121.4
+🏆 Лучший результат для headings: MRR = 0.824
+
+💾 Результаты сохранены в ./data/optimization_results/
+
+🎯 АБСОЛЮТНО ЛУЧШАЯ КОМБИНАЦИЯ:
+Стратегия: overlap
+Параметры: {'chunk_size': 200, 'overlap': 10, 'min_chunk_length': 20}
+MRR: 0.950
+Hits@1: 0.933
+Chunks: 197
+Средняя длина: 183.2 слов
+
+📊 СРАВНЕНИЕ СТРАТЕГИЙ (лучшие результаты):
+fixed        | MRR: 0.933 | Hits@1: 0.867 | Chunks:  362 | Words:  95.1
+headings     | MRR: 0.824 | Hits@1: 0.733 | Chunks:  294 | Words: 116.3
+overlap      | MRR: 0.950 | Hits@1: 0.933 | Chunks:  197 | Words: 183.2
+paragraphs   | MRR: 0.802 | Hits@1: 0.733 | Chunks:  923 | Words:  33.7
+sentences    | MRR: 0.750 | Hits@1: 0.600 | Chunks: 1877 | Words:  17.8
+
+📈 ЗАВИСИМОСТЬ КАЧЕСТВА ОТ РАЗМЕРА CHUNKS:
+ 16.6 слов | MRR: 0.683 | sentences {'min_sentence_length': 5, 'min_chunk_length': 15}
+ 17.0 слов | MRR: 0.706 | sentences {'min_sentence_length': 10, 'min_chunk_length': 30}
+ 17.8 слов | MRR: 0.750 | sentences {'min_sentence_length': 15, 'min_chunk_length': 45}
+ 18.2 слов | MRR: 0.750 | paragraphs {'min_paragraph_length': 20, 'min_chunk_length': 20}
+ 19.0 слов | MRR: 0.750 | paragraphs {'min_paragraph_length': 30, 'min_chunk_length': 30}
+ 19.8 слов | MRR: 0.744 | sentences {'min_sentence_length': 20, 'min_chunk_length': 60}
+ 29.7 слов | MRR: 0.739 | paragraphs {'min_paragraph_length': 50, 'min_chunk_length': 50}
+ 33.7 слов | MRR: 0.802 | paragraphs {'min_paragraph_length': 80, 'min_chunk_length': 80}
+ 48.9 слов | MRR: 0.794 | fixed {'chunk_size': 50, 'min_chunk_length': 20}
+ 95.1 слов | MRR: 0.933 | fixed {'chunk_size': 100, 'min_chunk_length': 20}
+ 95.6 слов | MRR: 0.889 | overlap {'chunk_size': 100, 'overlap': 30, 'min_chunk_length': 20}
+ 95.6 слов | MRR: 0.933 | overlap {'chunk_size': 100, 'overlap': 20, 'min_chunk_length': 20}
+ 96.3 слов | MRR: 0.878 | overlap {'chunk_size': 100, 'overlap': 40, 'min_chunk_length': 20}
+ 96.4 слов | MRR: 0.911 | overlap {'chunk_size': 100, 'overlap': 10, 'min_chunk_length': 20}
+116.3 слов | MRR: 0.824 | headings {'min_chunk_length': 30}
+118.6 слов | MRR: 0.791 | headings {'min_chunk_length': 50}
+121.4 слов | MRR: 0.791 | headings {'min_chunk_length': 100}
+121.4 слов | MRR: 0.791 | headings {'min_chunk_length': 80}
+140.2 слов | MRR: 0.822 | overlap {'chunk_size': 150, 'overlap': 10, 'min_chunk_length': 20}
+140.2 слов | MRR: 0.836 | overlap {'chunk_size': 150, 'overlap': 20, 'min_chunk_length': 20}
+141.1 слов | MRR: 0.880 | fixed {'chunk_size': 150, 'min_chunk_length': 20}
+141.2 слов | MRR: 0.917 | overlap {'chunk_size': 150, 'overlap': 40, 'min_chunk_length': 20}
+141.6 слов | MRR: 0.922 | overlap {'chunk_size': 150, 'overlap': 30, 'min_chunk_length': 20}
+182.2 слов | MRR: 0.880 | fixed {'chunk_size': 200, 'min_chunk_length': 20}
+183.2 слов | MRR: 0.950 | overlap {'chunk_size': 200, 'overlap': 10, 'min_chunk_length': 20}
+183.4 слов | MRR: 0.872 | overlap {'chunk_size': 200, 'overlap': 20, 'min_chunk_length': 20}
+225.0 слов | MRR: 0.789 | fixed {'chunk_size': 250, 'min_chunk_length': 20}
+
+💡 РЕКОМЕНДАЦИИ:
+1. Используйте стратегию: overlap
+2. С параметрами: {'chunk_size': 200, 'overlap': 10, 'min_chunk_length': 20}
+3. Эффективные альтернативы (мало chunks, высокий MRR):
+   - overlap: MRR 0.950, 197 chunks
+   - fixed: MRR 0.933, 362 chunks
+   - overlap: MRR 0.933, 446 chunks
+4. Оптимальный размер chunks: 131.4 слов в среднем
+
+⏱️  Общее время выполнения: 121.0 минут
+📊 Проведено экспериментов: 27
+
+✅ ОПТИМИЗАЦИЯ ЗАВЕРШЕНА!
+🎯 РЕКОМЕНДУЕМАЯ НАСТРОЙКА:
+   Стратегия: overlap
+   Параметры: {'chunk_size': 200, 'overlap': 10, 'min_chunk_length': 20}
+   Ожидаемый MRR: 0.950
